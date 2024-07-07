@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff416c, #ff4b2b); /* Gradient background */
+            margin: 0;
+            padding: 0;
+            color: #fff; /* Text color for better readability on gradient background */
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for header */
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+        nav a.create-recipe,
+        nav a.recipe-list {
+            font-weight: bold; /* Bold font for these links */
+            padding: 8px 16px; /* Padding around the links */
+            border-radius: 4px; /* Rounded corners */
+            background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+            transition: background-color 0.3s ease; /* Smooth transition on hover */
+        }
+        nav a.create-recipe:hover,
+        nav a.recipe-list:hover {
+            background-color: rgba(255, 255, 255, 0.4); /* Darker background on hover */
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Light background for content */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    {%include 'nav.html'%}
+
+    <div style="padding: 200px;">
+        <h1>Welcome to Recipe Homepage</h1>
+        <p>Start exploring by creating your own recipes or browsing our recipe list.</p>   
+     </div>
+</body>
+</html>
